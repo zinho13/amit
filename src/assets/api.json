@@ -1,0 +1,315 @@
+{
+    "endpoint": {
+        "geCurrentDateTime": "date",
+        "authentification": {
+            "login": "user/api/login",
+            "logout": "api/user/logout",
+            "mdp_oublie": "",
+            "getConnectedUser": "api/connected-user"
+        },
+        "parametrage": {
+            "register": {
+                "addUser": "api/amituser/add",
+                "getAllUser": "api/amituser",
+                "getUserById": "api/amituser/:id",
+                "updateUser": "api/amituser/update",
+                "updateUserInfo": "",
+                "deleteUser": "api/amituser/delete/:id",
+                "searchUser": "api/amituser/search"
+            },
+            "corpMedical": {
+                "addCorpsMedical": "api/corps-medical/add",
+                "getTypeCorpMedical": "api/corps-medical/type"
+            },
+            "group": {
+                "getAllGroup": "api/group",
+                "getGroupById": "api/group",
+                "addGroup": "api/group/add",
+                "updateGroupById": "api/group/update",
+                "deleteGroupeById": "api/group/delete/:id",
+                "searchGroup": "api/group",
+                "isGroupExist": "api/search/group"
+            },
+            "fournisseur": {
+                "getAllFournisseur": "api/fournisseur/search",
+                "addFournisseur": "api/fournisseur/add",
+                "updateFournisseur": "api/fournisseur/update"
+            },
+            "role": {
+                "getAllRole": "api/role",
+                "getUserRoleByUserId": "api/user-roles-by-user",
+                "addUserRole": "api/user-role/add"
+            },
+            "produits": {
+                "getAllProduits": "api/produit/search",
+                "getAllMedicaments": "api/produit/findAll/search",
+                "getProduitsbyId": "api/produit/:id",
+                "addProdiuts": "api/produit/add",
+                "updateProduits": "api/produit/update",
+                "deleteProduts": "api/produit/delete/:id",
+                "searchProduit": "api/produit/search",
+                "getProduitNoKit": "api/produit/non-kit/search",
+                "getProduitNoKitOutKit": "api/produit/not-in-kit/search"
+            },
+            "typeProduit": {
+                "getAllTypeProduits": "api/type_produit"
+            },
+            "presentationProduit": {
+                "getAllPresentationProduit": "api/presentation-produit"
+            },
+            "unite": {
+                "getAllUnite": "api/unite",
+                "searchUnite": "api/entite/unite/search",
+                "addUnite": "api/unite/add",
+                "updateUnite": "api/unite/update"
+            },
+            "compositionKit": {
+                "getAllCompositionKit": "api/composition-kit/search",
+                "addCompositionKit": "api/composition-kit/add",
+                "updateCompositionKit": "api/composition-kit/update",
+                "addElementCompositinKit": "api/composition-kit/elemnet/add",
+                "detailsKit": "api/composition-kit/detail"
+            },
+            "privileges": {
+                "getPageRole": "api/get_groupe_role/page",
+                "getTableRole": "api/get_groupe_role/tableau",
+                "getMenuRole": "api/get_groupe_role/menu",
+                "updatePage": "api/groupe_role/update/page",
+                "updateTable": "api/groupe_role/update/tableau",
+                "updateMenu": "api/groupe_role/update/menu"
+            },
+            "gestionMaladies": {
+                "addMaladie": "api/cim10/add",
+                "searchMaladie": "api/cim10/search",
+                "updateMaladie": "api/cim10/update"
+            },
+            "paiement": {
+                "modePaiement": {
+                    "getModePaiement": "api/mode-paiement",
+                    "updateModePaiement": "api/mode-paiement/update"
+                },
+                "banque": {
+                    "getBanque": "api/banque/search",
+                    "getBanqueActive": "api/banque-active",
+                    "addBanque": "api/banque/add",
+                    "updateBanque": "api/banque/update"
+                },
+                "getNumeroCompteByBanqueId": "api/numero-compte/get-by-id-banque"
+            },
+            "services": {
+                "getAllService": "api/entite/service/search",
+                "addService": "api/service/add",
+                "updateService": "api/service/update",
+                "getServiceByCentre": "api/service/centre"
+            },
+            "centre": {
+                "getListCentre": "api/entite/centre/search",
+                "addCentre": "api/centre/add",
+                "updateCentre": "api/centre/update"
+            },
+            "typeProduits": {
+                "getAllTypeProduits": "api/entite/typeProduit/search",
+                "addProduit": "api/type_produit/add",
+                "updateProduit": "api/type_produit/update"
+            },
+            "donateur": {
+                "addDonateur": "api/donateur/add",
+                "updateDonateur": "api/donateur/update",
+                "getAllDonateur": "api/donateur"
+            },
+            "typeRelance": {
+                "addTypeRelance": "api/relance/type/add",
+                "getAllTypeRelance": "api/relance/type",
+                "updateTypeRelance": "api/relance/type/update"
+            },
+            "site": {
+                "addSite": "api/site/add",
+                "updateSite": "api/site/update",
+                "getAllSite": "api/entite/site/search/"
+            },
+            "client": {
+                "addClient": "api/client-create",
+                "updateClient": "api/client-update",
+                "getAllClient": "api/client-list"
+            },
+            "global": {
+                "getAll": "api/parametre",
+                "add": "api/parametre/add",
+                "update": "api/parametre/update"
+            },
+            "categories": {
+                "getAll": "api/categorie",
+                "add": "api/categorie/add",
+                "update": "api/categorie/update"
+            },
+            "etiquette": {
+                "getAllEtiquette": "api/etiquette/liste"
+            }
+        },
+        "gestionClients": {
+            "adhesion": {
+                "getAdherentById": "api/adherent/getById",
+                "societe": {
+                    "addAdherentSociete": "api/adherent/entreprise/add",
+                    "updateAdherentSociete": "api/adherent/entreprise/update",
+                    "getAdherentSocieteById": "",
+                    "getAllAdherentSociete": "api/adherent/entreprise",
+                    "deleteAdherentSociete": "",
+                    "searchAdherentSociete": "api/adherent/entreprise/search",
+                    "uploadDNS": "api/dns/import",
+                    "historiqueDNS": "api/historique/dns",
+                    "exportDNS": "api/historique-dns/export-dns"
+                },
+                "travailleur_independant": {
+                    "addAdherentTI": "api/adherent/travailleur-independant/add",
+                    "updateAdherentTI": "api/adherent/travailleur-independant/update",
+                    "getAdherentTIById": "",
+                    "getAllAdherentTI": "",
+                    "searchAllAdherentTI": "api/adherent/travailleur-independant/search",
+                    "deleteAdherentTI": ""
+                },
+                "parent_agent": {
+                    "addAdherentPA": "api/adherent/parent-agent/add",
+                    "updateAdherentPA": "api/adherent/parent-agent/update",
+                    "getAdherentPAById": "api/adherent/parent-agent/{id}",
+                    "getAllAdherentPA": "api/adherent/parent-agent",
+                    "deleteAdherentPA": "api/adherent/parent-agent/delete/{id}",
+                    "searchAllAdherentPA": "api/adherent/parent-agent/search"
+                },
+                "droit_adhesion": {
+                    "addPaieDroit": "api/adherent/payer-droit",
+                    "getDroitImpaye": "api/droit/impaye/adherent"
+                },
+                "historique_paiement": "api/historique-paiement"
+            },
+            "affilie": {
+                "addAffilie": "api/affilie/employe/add",
+                "updateAffilie": "api/affilie/employe/update",
+                "getAffilieById": "api/affilie/employe-by-id",
+                "getAllAffilie": "api/affilie/employe",
+                "getAffilieAdherent": "api/affilie/employe/adherent/search",
+                "deleteAffilie": "",
+                "getDateInscriptionAffilie": "api/affilie/get-date-inscription",
+                "debaucher": "api/affilie/employe/debauche",
+                "famille": {
+                    "getFamilleAffilie": "api/employe/famille",
+                    "addConjointFamilleAffilie": "api/employe/conjoint",
+                    "addEnfantFamilleAffilie": "api/employe/enfant",
+                    "updateFamilleAdherent": "",
+                    "CountConjoint": "api/employe/get-is-conjoint"
+                },
+                "transfert_affilie": "api/affilie/employe/adherent/transfert"
+            },
+            "cotisation": {
+                "getListPaiement": "api/paiement/impaye/adherent",
+                "getAllTypePaiement": "api/type-paiement",
+                "getFacturePaiement": "api/paiement/facture",
+                "rejeterFacture": "api/paiement/reject-facture",
+                "countAffilie": "api/affilie/employe/adherent/count",
+                "paiement": "api/paiement/payer",
+                "updateMajore": "api/paiement/majore",
+                "removeMajore": "api/paiement/demajore",
+                "checkPaiementAvance": "api/paiement/check-pay-avance",
+                "paiementAvance": "api/paiement/pay-avance",
+                "getTropPercuByAdherentId": "api/paiement/get-trop-percu",
+                "getMasseSalarialByAdherentId": "api/adherent/entreprise/masse-salariale"
+            },
+            "relance": {
+                "getAllAdherentArelancer": "api/paiement/relance/liste",
+                "addRelance": "api/relance/add",
+                "detailRelanceAdherent": "api/get/relance",
+                "getTypeRelanceActive": "api/active/relance/type"
+            },
+            "debloquerAdherent": "api/adherent/entreprise/deloquer-suspension"
+        },
+        "stockEtAppro": {
+            "addEvaluation": "api/evaluation-fournisseur/add",
+            "searchEvaluation": "api/evaluation-fournisseur/filter_by_year",
+            "don": {
+                "getAllDon": "api/don",
+                "addDon": "api/don/add",
+                "updateDon": "api/don/update"
+            },
+            "commande": {
+                "getAllCommande": "api/liste-commande/mes-commande",
+                "getAllCommandeRecu": "api/liste-commande/recues",
+                "rejetCommandeRecu": "api/commande/rejeter",
+                "getAllCommandeRejeteInterne": "api/rejet/liste-interne",
+                "getAllCommandeRejeteExterne": "api/rejet/liste-externe",
+                "getAllDetailsCommande": "api/commande/detail-commande",
+                "getResteLivrer": "api/commande/resteLivrer",
+                "addCommande": "api/commande/add",
+                "updateCommande": "api/update/commande",
+                "updateCommandeToRejet": "api/commande/rejeter",
+                "getAllProduitById": "api/show/elements/commande",
+                "livraisonCommande": "api/livraison/commande",
+                "resteLivrer": "",
+                "getListServiceWithCommande": "api/commande/list/service",
+                "getAllCommandeFromServiceByIdService": "api/commande/list/service/detail",
+                "addCommandeServiceSite": "api/commande/add-bon/service-site",
+                "updateCommandeServiceSite": "api/commande/update-Bon-ServiceSite",
+                "deleteCommandeServiceSite": "",
+                "getDetailsCommande": "api/commande/detail-commande",
+                "getListProduitFourniturePreparationCommande": "api/commande/tableau-preparation"
+            },
+            "bonCommande": {
+                "listCommandeSiteService": "api/liste-commande/recue-centre",
+                "regrouperBonCommande" : "api/commande/group"
+            },
+            "stock": {
+                "getStockByEntite": "api/parametrage-stock",
+                "setParameter": "api/parametrage-stock/add"
+            },
+            "cmm": {
+                "getCmmByIdCentre": "api/produit/cmm",
+                "getCmmProduit": "api/cmm-produit"
+            },
+            "lastYearCommandes": {
+                "getAllLastYesrCommandes": "api/liste/commande",
+                "getAllLastDetailCommande": "api/liste/detailcommande",
+                "getFactureBon": "api/export/commande"
+            },
+            "livraison": {
+                "addLivraison": "api/bon-livraison/add/",
+                "updateLivraison": "",
+                "getListLivraison": "api/bon-livraison-liste",
+                "getDetailLivraison": "api/bon-livraison-detail/"
+            },
+            "distribution": {
+                "getBonCommandeRecus": "api/bon-commande/recu",
+                "getProduitFromBonCommande": "api/mouvement-produits/bon"
+            },
+            "casse": {
+                "addCasse": "api/casse",
+                "getListCasse": "api/CasseList",
+                "searchCasse": "api/CasseList",
+                "getUserValidator": "api/userValidator",
+                "updateCasse": "api/casse"
+            },
+            "BCGoupeCentre": {
+                "getAllBcRecues": "api/commande/liste/grouper",
+                "validateBonCommande": "api/validation/bon-commande"
+            }
+        },
+        "notifications": {
+            "getNotifications": "api/notification",
+            "updateNotification": "api/notification/update/"
+        },
+        "caisse": {
+            "searchFondsParCentre": "api/fond/centre",
+            "getAllFondsParCentre": "api/petite-caisse/liste-Fonds-parMois",
+            "addEntree": "api/petite-caisse/entree-manuel",
+            "addSortie": "api/petite-caisse/demande-sortie",
+            "getAllCentreSorties": "api/Select_sortie/fonds",
+            "getListeEntrees": "api/histo/entree/fonds",
+            "getListeSorties": "api/Select_sortie/fonds",
+            "downloadPetiteCaisse": "api/petite-caisse/ExportsPDF",
+            "approveOrReject": "api/petite-caisse/Approbation-sortie",
+            "validateSortie": "api/petite-caisse/validation-caissier",
+            "getDetailsSortie": "api/petite-caisse/Details-Fonds-parMois"
+        },
+        "commandes": {
+            "getAllCommandes": "api/commande"
+        }
+    }
+}
